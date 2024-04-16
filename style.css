@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Inter:wght@100..900&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: "Hind", sans-serif;
+
+}
+body{
+    margin:0;
+    padding:0
+}
+#container > div{
+    padding: 10px 20px;
+}
+#current-image-container{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: start;
+    gap:20px;
+    
+}
+#current-image-container > p:nth-child(1){
+    font-size: 40px;
+    font-weight: 1000;
+    margin: 0;
+    margin-top: 20px;
+}
+#current-image-container  p:nth-child(3){
+    font-size: 28px;
+    font-weight: 1000;
+    margin:0;
+    margin-top: 10px;
+}
+#current-image-container  p:nth-child(4){
+    width: 1000px;
+}
+#current-image-container > img{
+    height: 500px;
+    width: 1000px;
+}
+#form_div > p, #history_div > p{
+    font-size: 28px;
+    font-weight: 1000;
+}
+#search-form{
+    height: 30px;
+    margin-top: 20px;
+}
+#search-form > input{
+    height: 100%;
+    margin-left: 20px;
+    width: 15%;
+    padding:0px 10px
+}
+#search-form > button{
+    height: 100%;
+    margin-left: 20px;
+    width: 10%;
+}
+#history_div {
+    height: 100%;
+}
+ul{
+    list-style: none;
+}
+li{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    #current-image-container  p:nth-child(4){
+        width: 100%;
+    }
+    #current-image-container > img{
+        height: 400px;
+        width: 100%;
+    }
+    #search-form > button{
+        width: 15%;
+    }
+  }
+  @media screen and (max-width: 769px) {
+    #current-image-container  p:nth-child(4){
+        width: 100%;
+    }
+    #current-image-container > img{
+        height: 400px;
+        width: 100%;
+    }
+    #search-form > input{
+        width: 25%;
+    }
+  }
